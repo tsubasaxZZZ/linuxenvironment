@@ -17,3 +17,11 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
+export DOCKER_HOST='tcp://0.0.0.0:2375'
+export PATH=$PATH:/usr/local/go/bin/:~/go/bin/
+export GO111MODULE=on
+export GOPATH=~/go
+export PATH=$PATH:$GOPATH/bin
+alias gh='cd $(ghq list -p | peco)'
+alias gho='gh-open $(ghq list -p | peco)'
+. ~/.kubecomple
