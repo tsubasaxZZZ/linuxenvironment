@@ -125,3 +125,5 @@ alias gho='gh-open $(ghq list -p | peco)'
 . ~/.kubecomple
 . ~/.git-completion.bash
 . ~/.git-prompt.sh
+alias k=kubectl
+complete -F __start_kubectl k
